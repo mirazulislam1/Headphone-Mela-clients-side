@@ -13,7 +13,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-rose-500 mt-5 text-white rounded">
+        <div className="navbar bg-rose-500 mt-5 rounded">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <img className='h-16 rounded-lg' src={navbar} alt="" />
-                <Link to='/' className="btn btn-ghost normal-case text-xl">Headphone Mela</Link>
+                <Link to='/' className="btn btn-ghost normal-case text-xl text-white">Headphone Mela</Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
