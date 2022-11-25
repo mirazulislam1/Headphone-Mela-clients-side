@@ -1,14 +1,14 @@
 [
     {
-        "id":"01",
+        "Category_id":"01",
         "name":"On-Ear Headphones"
     },
     {
-        "id":"01",
+        "Category_id":"01",
         "name":"Earbuds Headphones"
     },
     {
-        "id":"01",
+        "Category_id":"01",
         "name":"Wired Headphones"
     }
 ]
