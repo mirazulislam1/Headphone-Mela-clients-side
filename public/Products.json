@@ -1,0 +1,111 @@
+[
+    {
+        "Category_id":"01",
+        "img":"https://www.startech.com.bd/image/cache/catalog/headphone/a4tech/bloody-g230p/bloody-g230p-01-500x500.webp",
+        "name":"A4TECH Bloody MR710 Wireless RGB Gaming Headphone",
+        "location":"Daulatpur, Khulna",
+        "OriginalPrice":"6500",
+        "ResellPrice":"3000",
+        "UseOfYears":"1 years",
+        "PostedTime":"2 hours ago",
+        "Seller'sName": "Fahad Sheikh"
+
+    },
+    {
+        "Category_id":"02",
+        "img":"https://www.penguin.com.bd/wp-content/uploads/2022/11/A3939011_NoiseCancellingEarbuds_TD01_600x.png",
+        "name":"Anker Soundcore Life P3 Noise Cancelling Earbuds",
+        "location":"Monihar, Jessore",
+        "OriginalPrice":"6690",
+        "ResellPrice":"4000",
+        "UseOfYears":"1 year 6 months",
+        "PostedTime":"5 hour 45 minute ago",
+        "Seller'sName": "Hasibul Islam Piklu"
+
+    },
+    {
+        "Category_id":"03",
+        "img":"https://www.penguin.com.bd/wp-content/uploads/2022/11/Koss-KSC75_1_5000x.png",
+        "name":"KOSS KSC75 Ear Clip Headphone",
+        "location":"Mirpur, Dhaka",
+        "OriginalPrice":"2470",
+        "ResellPrice":"1000",
+        "UseOfYears":"1 year 7 months",
+        "PostedTime":"3 hours ago",
+        "Seller'sName": "Toriqul Islam"
+
+    },
+    {
+        "Category_id":"01",
+        "img":"https://www.startech.com.bd/image/cache/catalog/headphone/a4tech/bloody-g525/bloody-g525-01-500x500.jpg",
+        "name":"A4TECH Bloody G525 Virtual 7.1 Surround Sound Gaming Headphone",
+        "location":"Sonadhanga, khulna",
+        "OriginalPrice":"3150",
+        "ResellPrice":"2000",
+        "UseOfYears":"6 months",
+        "PostedTime":"12 hours ago",
+        "Seller'sName": "Amanullah Sheikh"
+
+    },
+    
+    {
+        "Category_id":"02",
+        "img":"https://www.penguin.com.bd/wp-content/uploads/2022/10/edifier-to-u2-mini-true-wireless-earbuds-headphones-penguin.com_.bd_.png",
+        "name":"Edifier TO-U2 Mini True Wireless Earbud – Blue",
+        "location":"Kaligong, Shatkhira",
+        "OriginalPrice":"6299",
+        "ResellPrice":"4500",
+        "UseOfYears":"8 months",
+        "PostedTime":"1 day ago",
+        "Seller'sName": "Md Ahadul Molla"
+
+    },
+    {
+        "Category_id":"03",
+        "img":"https://www.penguin.com.bd/wp-content/uploads/2022/11/KossKPH30iblack01_904x.progressive.png",
+        "name":"Koss KPH30i On-Ear Headphone",
+        "location":"Narayongong, Dhaka",
+        "OriginalPrice":"3350",
+        "ResellPrice":"2000",
+        "UseOfYears":"9 months",
+        "PostedTime":"2 days ago",
+        "Seller'sName": "Md Akram"
+
+    },
+    {
+        "Category_id":"01",
+        "img":"https://www.startech.com.bd/image/cache/catalog/headphone/logitech/h110/logitec-h110-headphone-500x500.jpg",
+        "name":"Logitech H110 STEREO Headset (Two port)",
+        "location":"Kalia Narail",
+        "OriginalPrice":"1550",
+        "ResellPrice":"500",
+        "UseOfYears":"1 year 2 months",
+        "PostedTime":"6 hour 30 minute ago",
+        "Seller'sName": "Hasib Kazi"
+
+    },
+    {
+        "Category_id":"02",
+        "img":"https://www.penguin.com.bd/wp-content/uploads/2022/10/Untitled-2_7755d299-aeda-47c5-80e6-f396491e73c5_2000x.png",
+        "name":"Audio-Technica ATH-CKS5TW True Wireless Earphone",
+        "location":"Gazirhat, khulna",
+        "OriginalPrice":"10950",
+        "ResellPrice":"5000",
+        "UseOfYears":"2 years",
+        "PostedTime":"8 hours ago",
+        "Seller'sName": "Prince Ahmed"
+
+    },
+    {
+        "Category_id":"03",
+        "img":"https://www.penguin.com.bd/wp-content/uploads/2022/11/KossPortaProClassic_5000x-1200x1200.png",
+        "name":"KOSS Porta Pro® On-Ear Headphones",
+        "location":"Gazipur, Dhaka",
+        "OriginalPrice":"4400",
+        "ResellPrice":"3200",
+        "UseOfYears":"1 year",
+        "PostedTime":"1 day 5 hours",
+        "Seller'sName": "Md Anisur Rahman"
+
+    }
+]

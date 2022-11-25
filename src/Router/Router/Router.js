@@ -2,7 +2,8 @@ import Main from "../../Layout/Main/Main";
 import Blog from "../../Pages/Blog/Blog";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
-import Register from "../../Pages/Register/Register";
+import SignUp from "../../Pages/SignUp/SignUp";
+
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -22,9 +23,10 @@ export const router = createBrowserRouter([
             element: <Login></Login>
         },
         {
-            path: '/register',
-            element: <Register></Register>
+            path: '/signup',
+            element: <SignUp></SignUp>
         },
+       
         {
             path: '/blog',
             element: <Blog></Blog>
