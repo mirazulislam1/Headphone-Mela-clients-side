@@ -1,14 +1,17 @@
 [
     {
         "Category_id":"01",
+        "image":"https://www.startech.com.bd/image/cache/catalog/headphone/logitech/g-pro/g-pro-1-500x500.jpg",
         "name":"On-Ear Headphones"
     },
     {
         "Category_id":"01",
+        "image":"https://gotoshop.com.bd/image/cache/awei/headphones/T15/AWEI-T15-TWS-Bluetooth-5-0-Earphones-Wireless-Earphone-Touch-Control-Sport-headset-Earbuds-buds-For1-500x500.jpg",
         "name":"Earbuds Headphones"
     },
     {
         "Category_id":"01",
+        "image":"https://www.skyland.com.bd/wp-content/uploads/2020/05/Fantech-HG15-Wired-headphone-price-in-bd.jpg",
         "name":"Wired Headphones"
     }
 ]
