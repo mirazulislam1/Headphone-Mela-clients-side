@@ -1,24 +1,26 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [loginError, setLoginError] = useState('');
-    const [loginUserEmail, setLoginUserEmail] = useState('');
-    
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const from = location.state?.from?.pathname || '/';
 
 
     const handleLogin = data => {
         console.log(data);
-        setLoginError('')
+       
         signIn(data.email, data.password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                setLoginUserEmail(data.email)
+                navigate(from, {replace: true})
 
             })
             .catch(error => {
@@ -60,7 +62,7 @@ const Login = () => {
                     </label>
                     <input className='btn w-full' value='Login' type="submit" />
                     <div>
-                        {loginError && <p>{loginError}</p>}
+                        {loginError && <p className='text-green-700'>{loginError}</p>}
                     </div>
                 </form>
                 <p className='text-sm text-center font-semibold mt-2'>New to Resell Headphone ? <Link className='text-success' to='/signup'>Create new account</Link></p>
