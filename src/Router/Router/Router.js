@@ -1,9 +1,9 @@
 import Main from "../../Layout/Main/Main";
 import Blog from "../../Pages/Blog/Blog";
-import Category from "../../Pages/Categories/Category";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
+import Category from "../../Pages/Categories/Category"
 
 
 const { createBrowserRouter } = require("react-router-dom");
