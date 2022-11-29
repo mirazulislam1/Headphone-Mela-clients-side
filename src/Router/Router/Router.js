@@ -7,6 +7,11 @@ import Category from "../../Pages/Categories/Category";
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import DashboardLayout from "../../Layout/DashboardLayout";
 import MyProducts from "../../Pages/Dashboard/MyProducts/MyProducts";
+import Categories from "../../Pages/Categories/Categories";
+import NotFound from "../../Shared/NotFound/NotFound";
+import AllUsers from "../../Pages/Dashboard/AllUsers";
+
+
 
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -30,11 +35,17 @@ export const router = createBrowserRouter([
             path: '/signup',
             element: <SignUp></SignUp>
         },
+
+        {
+            path:'/category',
+            element: <Categories></Categories>
+        },
        
         {
             path: '/blog',
             element: <Blog></Blog>
         },
+       
         {
             path: '/categories/:id',
             element: <Category></Category>
@@ -50,8 +61,16 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard',
                 element: <MyProducts></MyProducts>
+            },
+            {
+                path: '/dashboard/allUsers',
+                element: <AllUsers></AllUsers>
             }
         ]
+    },
+    {
+        path: '*',
+        element:<NotFound></NotFound>
     }
 
 ])

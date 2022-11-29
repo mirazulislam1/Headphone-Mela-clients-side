@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../Contexts/AuthProvider';
 import {useQuery} from '@tanstack/react-query';
-import Loading from '../../../Shared/Loading/Loading'
-
 
 
 const MyProducts = () => {
@@ -10,7 +8,7 @@ const MyProducts = () => {
 
     const url = `http://localhost:5000/bookings?email=${user?.email}`;
 
-    const {data : bookings = [], isLoading} = useQuery({
+    const {data : bookings = []} = useQuery({
         queryKey: ['bookings', user?.email],
         queryFn: async () =>{
             const res = await fetch(url);
@@ -19,13 +17,10 @@ const MyProducts = () => {
             return data;
         }
     })
-    if(isLoading){
-        return <Loading></Loading>
-    }
 
     return (
         <div className='mt-4'>
-            <h1 className='text-3xl font-semibold'>My Products</h1>
+            <h1 className='text-3xl font-semibold'>My Orders</h1>
             <div className="overflow-x-auto">
                 <table className="table  w-full">
                    
@@ -40,6 +35,7 @@ const MyProducts = () => {
                     </thead>
                     <tbody>
                         {
+                            bookings &&
                             bookings?.map((booking, i) =>  <tr key={booking._id}>
                                 <th>{i+1}</th>
                                 <td>{booking.name}</td>

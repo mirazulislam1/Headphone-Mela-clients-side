@@ -8,7 +8,7 @@ import carousel4 from '../../photo/carousel/carousel4.jpg'
 const Carousel = () => {
     return (
         <div className='mb-10 mt-4'>
-            <div className="carousel w-full   rounded-xl">
+            <div className="carousel w-full h-96 rounded-xl">
                 <div id="item1" className="carousel-item w-full">
                     <img src={carousel1}  className="w-full" alt=''/>
                 </div>
