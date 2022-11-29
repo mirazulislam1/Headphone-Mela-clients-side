@@ -74,11 +74,7 @@ const SignUp = () => {
                         {signUpError && <p className='text-green-700'>{signUpError}</p>}
                     </div>
                 </form>
-                <p className='text-sm text-center font-semibold mt-2'>All ready have an account ? <Link className='text-success' to='/login'>Please Login</Link></p>
-                <div className="flex flex-col w-full border-opacity-50">
-                    <div className="divider">OR</div>
-                </div>
-                <button className='btn btn-outline w-full'>Continue with Google</button>
+                <p className='text-sm text-center font-semibold mt-2'>All ready have an account ? <Link className='text-success' to='/login'>Please Login</Link></p>  
             </div>
         </div>
     );

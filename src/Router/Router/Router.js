@@ -3,7 +3,10 @@ import Blog from "../../Pages/Blog/Blog";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
-import Category from "../../Pages/Categories/Category"
+import Category from "../../Pages/Categories/Category";
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import DashboardLayout from "../../Layout/DashboardLayout";
+import MyProducts from "../../Pages/Dashboard/MyProducts/MyProducts";
 
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -39,7 +42,16 @@ export const router = createBrowserRouter([
         }
         
        ]
-
+    },
+    {
+        path:'/dashboard',
+        element:<PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+        children: [
+            {
+                path: '/dashboard',
+                element: <MyProducts></MyProducts>
+            }
+        ]
     }
 
 ])
