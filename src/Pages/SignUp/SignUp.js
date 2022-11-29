@@ -10,26 +10,26 @@ const SignUp = () => {
     const navigate = useNavigate();
 
     const handleSignUp = (data) => {
-            console.log(data);
-            setSignUpError('');
-            createUser(data.email, data.password)
-                .then(result => {
-                    const user = result.user;
-                    console.log(user);
-                    toast('User created successfully')
-                    const userInfo = {
-                        displayName: data.name
-                    }
-                    updateUser(userInfo)
-                    .then(() =>{
+        console.log(data);
+        setSignUpError('');
+        createUser(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                toast('User created successfully')
+                const userInfo = {
+                    displayName: data.name
+                }
+                updateUser(userInfo)
+                    .then(() => {
                         navigate('/');
                     })
                     .catch(error => console.error(error))
-                })
-                .catch(error => {
-                    console.error(error);
-                    setSignUpError(error.message)
-                })
+            })
+            .catch(error => {
+                console.error(error);
+                setSignUpError(error.message)
+            })
 
     }
     return (
@@ -45,6 +45,16 @@ const SignUp = () => {
                             required: 'Name is required'
                         })} className="input input-bordered w-full max-w-xs" />
                         {errors.name && <p className='text-green-700'>{errors.name?.message}</p>}
+                    </div>
+                    <div className="form-control w-full max-w-xs">
+                        <label className="label">
+                            <span className="label-text">Account type</span>
+                        </label>
+                        <select className="select select-bordered w-full max-w-xs">
+                            <option>Buyer</option>
+                            <option>Seller</option>
+                        </select>
+                        
                     </div>
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
@@ -74,7 +84,7 @@ const SignUp = () => {
                         {signUpError && <p className='text-green-700'>{signUpError}</p>}
                     </div>
                 </form>
-                <p className='text-sm text-center font-semibold mt-2'>All ready have an account ? <Link className='text-success' to='/login'>Please Login</Link></p>  
+                <p className='text-sm text-center font-semibold mt-2'>All ready have an account ? <Link className='text-success' to='/login'>Please Login</Link></p>
             </div>
         </div>
     );
