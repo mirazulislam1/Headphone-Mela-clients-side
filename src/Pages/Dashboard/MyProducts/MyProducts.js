@@ -6,7 +6,7 @@ import {useQuery} from '@tanstack/react-query';
 const MyProducts = () => {
     const {user} = useContext(AuthContext);
 
-    const url = `http://localhost:5000/bookings?email=${user?.email}`;
+    const url = `https://b612-used-products-resale-server-side-mirazulislam1.vercel.app/bookings?email=${user?.email}`;
 
     const {data : bookings = []} = useQuery({
         queryKey: ['bookings', user?.email],

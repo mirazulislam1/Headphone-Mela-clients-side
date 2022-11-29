@@ -9,7 +9,7 @@ const Category = () => {
     const n = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/categories/${n.id}`)
+        fetch(`https://b612-used-products-resale-server-side-mirazulislam1.vercel.app/categories/${n.id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)

@@ -5,7 +5,7 @@ const AllUsers = () => {
     const { data: users = [] } = useQuery({
         queryKey: ['users'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/users');
+            const res = await fetch('https://b612-used-products-resale-server-side-mirazulislam1.vercel.app/users');
             const data = await res.json();
             console.log(data)
             return data;
